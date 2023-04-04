@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brian Angatia - A Web Developer</title>
+  <style>
+    /* CSS styling for the footer */
+    footer {
+      background-color:red;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    footer a {
+      color:blue;
+      text-decoration: none;
+      padding: 5px;
+    }
+    
+    /* CSS styling for the navigation menu */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: pink;
+      padding: 10px;
+    }
+    
+    nav a {
+      color:purple;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    section {
+      display: none;
+    }
+    
+    section:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation menu -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home section -->
+  <section id="home">
+    <h1>Brian Angatia</h1>
+    <p>A Web Developer And a Web designer</p>
+  </section>
+
+  <!-- About section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a web developer with experience in HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <!-- Services section -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Website design and development</li>
+      <li>Responsive website development</li>
+      <li>E-commerce website development</li>
+    </ul>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>The technology generation</li>
+      <li>Fashions deign</li>
+    </ul>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="brianandrew112@gmail.com" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <p>Follow me on social media as Brian Angatia:</p>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+  </footer>
+  
+  <!-- JavaScript code for navigation menu -->
+  <script>
+    var links = document.querySelectorAll('nav a');
+    for (var i = 0; i < links.length; i++)
